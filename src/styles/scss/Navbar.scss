@@ -1,0 +1,16 @@
+nav {
+  border-bottom: 1px solid $border-color;
+  grid-column: span 12;
+  height: 60px;
+  padding: 0 40px;
+
+  h1 {
+    display: inline-block;
+    font-size: 22px;
+  }
+
+  a {
+    color: $text-color;
+    text-decoration-line: none;
+  }
+}

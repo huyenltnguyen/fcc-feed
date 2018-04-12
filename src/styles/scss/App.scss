@@ -1,0 +1,6 @@
+.App {
+  color: $text-color;
+  display: grid;
+  font-family: 'Roboto', sans-serif;
+  grid-template-columns: repeat(12, 1fr);
+}
