@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import '../styles/css/App.css';
 import Navbar from './Navbar';
 import Newsfeed from '../containers/Newsfeed';
 

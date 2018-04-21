@@ -1,23 +1,19 @@
 import React from 'react';
 import mediumFeed from '../data/mock-medium-data.xml';  // temporary
+import { connect } from 'react-redux';
+import { saveAllPosts } from '../actions';
 
 class Newsfeed extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      posts: {}
-    }
-  }
-
   renderPosts = () => {
-    return !Object.keys(this.state.posts).length
+    console.log(this.props.allPosts)
+    return !Object.keys(this.props.allPosts).length
       ? 'Loading...'
-      : Object.keys(this.state.posts).map(platformName => {
+      : Object.keys(this.props.allPosts).map(platformName => {
         return (
           <div key={ platformName }>
             {
               // temporary
-              this.state.posts[platformName].map(item => <div key={ item.id }>{ item.title }</div>)
+              this.props.allPosts[platformName].map(item => <div key={ item.id }>{ item.title }</div>)
             }
           </div>
         )
@@ -35,7 +31,7 @@ class Newsfeed extends React.Component {
     return {
       [platformName]: postInfo
     };
-  }
+  };
 
   componentDidMount() {
     //const mediumFeed = 'https://cors-everywhere.herokuapp.com/medium.freecodecamp.org/feed';
@@ -47,10 +43,9 @@ class Newsfeed extends React.Component {
         // create an array of item nodes from the HTMLCollection (array-like object)
         // so that we can use `map()` on it to extract its data
         const itemNodeArr = Array.from(xmlDoc.getElementsByTagName('item'));
-        const posts = Object.assign(this.state.posts, this.extractPostInfoFromList('medium', itemNodeArr));
-        this.setState({ posts });
-
-        console.log(posts);
+        const posts = this.extractPostInfoFromList('medium', itemNodeArr); // temporary
+        console.log('posts', posts);
+        saveAllPosts(posts);
       });
   }
 
@@ -63,4 +58,10 @@ class Newsfeed extends React.Component {
   }
 }
 
-export default Newsfeed;
+const mapStateToProps = state => {
+  return {
+    allPosts: state.allPosts
+  }
+};
+
+export default connect(mapStateToProps, { saveAllPosts })(Newsfeed);
