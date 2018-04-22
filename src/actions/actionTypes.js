@@ -1,3 +1,3 @@
 export default {
-  SAVE_ALL_POSTS: 'SAVE_ALL_POSTS'
+  FETCH_ENTRIES: 'FETCH_ENTRIES'
 }
