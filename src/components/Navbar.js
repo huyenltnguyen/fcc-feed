@@ -1,10 +1,11 @@
 import React from 'react';
-// import '../styles/css/Navbar.css';
 
 const Navbar = () => {
   return (
     <nav>
-      <button className='toggleMenu'>Menu</button>
+      <button className='toggleMenu' aria-label='Menu'>
+        <i className='fas fa-bars'></i>
+      </button>
       <h1><a href='#'>freeCodeCamp Feeds</a></h1>
     </nav>
   );

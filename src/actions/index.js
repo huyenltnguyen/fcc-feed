@@ -1,5 +1,4 @@
 import actionTypes from './actionTypes';
-import mediumFeed from '../data/mock-medium-data.xml';  // temporary
 
 const extractEntryDataFromList = (platformName, itemNodes) => {
   const entryData = itemNodes.map(itemNode => {
