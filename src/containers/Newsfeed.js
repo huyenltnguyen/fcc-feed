@@ -2,17 +2,25 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { fetchEntries } from '../actions';
 import mediumFeed from '../data/mock-medium-data.xml';  // temporary
+import Entry from '../components/Entry';
 
 class Newsfeed extends React.Component {
-  renderEntries = () => {
-    return Object.keys(this.props.entries).map(platformName => {
+  renderEntry = (platformName) => {
+    // temporary
+    return this.props.entries[platformName].map((entry) => {
+      return <Entry key={ entry.id } entry={ entry } />
+    });
+  }
+
+  renderNewsfeed = () => {
+    return Object.keys(this.props.entries).map((platformName) => {
       return (
-        <div key={ platformName }>
+        <ul key={ platformName }>
           {
             // temporary
-            this.props.entries[platformName].map(item => <div key={ item.id }>{ item.title }</div>)
+            this.renderEntry(platformName)
           }
-        </div>
+        </ul>
       )
     });
   }
@@ -28,7 +36,7 @@ class Newsfeed extends React.Component {
   render() {
     return (
       <div className='Newsfeed'>
-        { this.renderEntries() }
+        { this.renderNewsfeed() }
       </div>
     );
   }

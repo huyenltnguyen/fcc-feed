@@ -1,10 +1,14 @@
 import actionTypes from './actionTypes';
 
 const extractEntryDataFromList = (platformName, itemNodes) => {
-  const entryData = itemNodes.map(itemNode => {
+  const entryData = itemNodes.map((itemNode) => {
     return {
       id: itemNode.getElementsByTagName('guid')[0].textContent,
-      title: itemNode.getElementsByTagName('title')[0].textContent
+      title: itemNode.getElementsByTagName('title')[0].textContent,
+      pubDate: itemNode.getElementsByTagName('pubDate')[0].textContent,
+      author: itemNode.getElementsByTagName('dc:creator')[0].textContent,
+      link: itemNode.getElementsByTagName('link')[0].textContent,
+      thumbnail: itemNode.getElementsByTagName('content:encoded')[0].textContent.match(/src="(.*?)"/)[0].replace(/(src=)|(")/g, '')
     };
   });
 
