@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
+import Menu from './Menu';
 import Newsfeed from '../containers/Newsfeed';
 
 class App extends Component {
@@ -8,6 +9,7 @@ class App extends Component {
       <div className="App">
         <Navbar />
         <Newsfeed />
+        <Menu />
       </div>
     );
   }

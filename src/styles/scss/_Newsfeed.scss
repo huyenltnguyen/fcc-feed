@@ -1,12 +1,6 @@
 .Newsfeed {
+  border: 1px solid $border-color;
   color: $text-color;
-  grid-column: span 9;
-  padding: 0 60px;
-
-  ul {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    list-style-type: none;
-    padding: 0;
-  }
+  grid-column: 3 / span 2;
+  // padding: 0 60px;
 }

@@ -8,7 +8,7 @@ const extractEntryDataFromList = (platformName, itemNodes) => {
       pubDate: itemNode.getElementsByTagName('pubDate')[0].textContent,
       author: itemNode.getElementsByTagName('dc:creator')[0].textContent,
       link: itemNode.getElementsByTagName('link')[0].textContent,
-      thumbnail: itemNode.getElementsByTagName('content:encoded')[0].textContent.match(/src="(.*?)"/)[0].replace(/(src=)|(")/g, '')
+      thumbnail: itemNode.getElementsByTagName('content:encoded')[0].textContent.match(/src="(.*?)"/)[0].replace(/(src=)|(")/g, '')  // match url inside the src attribute (including the 'src=' string and the quotation marks), then extract the url only
     };
   });
 
