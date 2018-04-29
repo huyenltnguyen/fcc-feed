@@ -1,6 +1,10 @@
 import actionTypes from './actionTypes';
 
-const extractEntryDataFromList = (platformName, itemNodes) => {
+const extractMediumEntryData = (xmlDoc) => {
+  // create an array of item nodes from the HTMLCollection (array-like object)
+  // so that we can use `map()` on it to extract its data
+  const itemNodes = Array.from(xmlDoc.getElementsByTagName('item'));
+
   const entryData = itemNodes.map((itemNode) => {
     return {
       id: itemNode.getElementsByTagName('guid')[0].textContent,
@@ -13,23 +17,50 @@ const extractEntryDataFromList = (platformName, itemNodes) => {
   });
 
   return {
-    [platformName]: entryData
+    medium: entryData
   };
 };
 
-export const fetchEntries = (feedUrl) => {
-   //const mediumFeed = 'https://cors-everywhere.herokuapp.com/medium.freecodecamp.org/feed';
+const extractYoutubeEntryData = (xmlDoc) => {
+  // create an array of item nodes from the HTMLCollection (array-like object)
+  // so that we can use `map()` on it to extract its data
+  const itemNodes = Array.from(xmlDoc.getElementsByTagName('entry'));
+
+  const entryData = itemNodes.map((itemNode) => {
+    return {
+      id: itemNode.getElementsByTagName('yt:videoId')[0].textContent,
+      title: itemNode.getElementsByTagName('title')[0].textContent,
+      link: itemNode.getElementsByTagName('link')[0].getAttribute('href').replace('watch?v=', 'embed/'),
+      pubDate: itemNode.getElementsByTagName('published')[0].textContent,
+      thumbnail: itemNode.getElementsByTagName('media:thumbnail')[0].getAttribute('url'),
+      description: itemNode.getElementsByTagName('media:description')[0].textContent
+    }
+  });
+
+  return {
+    youtube: entryData
+  };
+};
+
+export const fetchEntries = (platform, feedUrl) => {
+   // const mediumFeed = 'https://cors-everywhere.herokuapp.com/medium.freecodecamp.org/feed';
+   // const youtubeFeed = 'https://cors-everywhere.herokuapp.com/youtube.com/feeds/videos.xml?channel_id=UC8butISFwT-Wl7EV0hUK0BQ';
   const request = fetch(feedUrl);
+  let entries = {};
 
   return (dispatch) => {
     request.then((res) => res.text())
       .then((str) => {
         // parse XML from str into a DOM document
         const xmlDoc = new DOMParser().parseFromString(str, 'application/xml');
-        // create an array of item nodes from the HTMLCollection (array-like object)
-        // so that we can use `map()` on it to extract its data
-        const itemNodeArr = Array.from(xmlDoc.getElementsByTagName('item'));
-        const entries = extractEntryDataFromList('medium', itemNodeArr); // temporary
+
+        if (platform === 'medium') {
+          entries = { ...extractMediumEntryData(xmlDoc) };
+        } else if (platform === 'youtube') {
+          entries = { ...extractYoutubeEntryData(xmlDoc) };
+          console.log(entries);
+        }
+
         dispatch({ type: actionTypes.FETCH_ENTRIES, payload: entries })
     });
   };

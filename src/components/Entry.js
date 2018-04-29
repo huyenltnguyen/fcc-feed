@@ -1,20 +1,16 @@
 import React from 'react';
+import MediumEntry from './MediumEntry';
+import YoutubeEntry from './YoutubeEntry';
 
 const Entry = (props) => {
-  const { entry } = props;
+  const { entry, platform } = props;
 
   return (
-    <li className='Entry'>
-      <a href='#'>
-        <div className='entry-thumbnail'>
-          <img alt='' src={ entry.thumbnail } />
-        </div>
-
-        <div className='entry-body'>
-          <h2>{ entry.title }</h2>
-        </div>
-      </a>
-    </li>
+    platform === 'medium'
+    ? <MediumEntry entry={ entry } />
+    : platform === 'youtube'
+    ? <YoutubeEntry entry={ entry } />
+    : null
   );
 };
 

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+    <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC8butISFwT-Wl7EV0hUK0BQ" />
+    <id>yt:channel:UC8butISFwT-Wl7EV0hUK0BQ</id>
+    <yt:channelId>UC8butISFwT-Wl7EV0hUK0BQ</yt:channelId>
+    <title>freeCodeCamp</title>
+    <link rel="alternate" href="https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ" />
+    <author>
+        <name>freeCodeCamp</name>
+        <uri>https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ</uri>
+    </author>
+    <published>2014-12-16T21:18:48+00:00</published>
+    <entry>
+        <id>yt:video:PlxWf493en4</id>
+        <yt:videoId>PlxWf493en4</yt:videoId>
+        <yt:channelId>UC8butISFwT-Wl7EV0hUK0BQ</yt:channelId>
+        <title>HTML Tutorial - How to Make a Super Simple Website</title>
+        <link rel="alternate" href="https://www.youtube.com/watch?v=PlxWf493en4" />
+        <author>
+            <name>freeCodeCamp</name>
+            <uri>https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ</uri>
+        </author>
+        <published>2018-04-25T16:57:22+00:00</published>
+        <updated>2018-04-26T15:01:35+00:00</updated>
+        <media:group>
+            <media:title>HTML Tutorial - How to Make a Super Simple Website</media:title>
+            <media:content url="https://www.youtube.com/v/PlxWf493en4?version=3" type="application/x-shockwave-flash" width="640" height="390" />
+            <media:thumbnail url="https://i1.ytimg.com/vi/PlxWf493en4/hqdefault.jpg" width="480" height="360" />
+            <media:description>If you're an absolute beginner in web development, you can learn the basics of HTML here. This video covers setting up an HTML file, and the basic HTML tags and what they mean. Download the website files to follow along with this tutorial: https://coder-coder.com/cu-basic-website-html/ Read the blog post version here: https://coder-coder.com/how-to-make-simple-website-html/ - Learn to code for free and get a developer job: https://www.freecodecamp.com Read hundreds of articles on programming: https://medium.freecodecamp.com And subscribe for new videos on technology every day: https://youtube.com/subscription_center?add_user=freecodecamp</media:description>
+            <media:community>
+                <media:starRating count="120" average="4.90" min="1" max="5" />
+                <media:statistics views="1891" />
+            </media:community>
+        </media:group>
+    </entry>
+    <entry>
+        <id>yt:video:vwe8maXnL4A</id>
+        <yt:videoId>vwe8maXnL4A</yt:videoId>
+        <yt:channelId>UC8butISFwT-Wl7EV0hUK0BQ</yt:channelId>
+        <title>Updating an Old jQuery Web App - Live Coding with Jesse</title>
+        <link rel="alternate" href="https://www.youtube.com/watch?v=vwe8maXnL4A" />
+        <author>
+            <name>freeCodeCamp</name>
+            <uri>https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ</uri>
+        </author>
+        <published>2018-04-25T15:43:38+00:00</published>
+        <updated>2018-04-26T12:22:25+00:00</updated>
+        <media:group>
+            <media:title>Updating an Old jQuery Web App - Live Coding with Jesse</media:title>
+            <media:content url="https://www.youtube.com/v/vwe8maXnL4A?version=3" type="application/x-shockwave-flash" width="640" height="390" />
+            <media:thumbnail url="https://i3.ytimg.com/vi/vwe8maXnL4A/hqdefault.jpg" width="480" height="360" />
+            <media:description>Today we will making be a minor update to on old web app that I built with jQuery. See a professional front-end developer at work. Unscripted. Mistakes included. Gitter: https://gitter.im/LiveCodingwithJesseFreeCodeCamp/ Twitter: https://twitter.com/JesseRWeigel Youtube: https://www.youtube.com/c/JesseWeigel29 Instagram: https://www.instagram.com/jesse.weigel/ Code Editor: Visual Studio Code VS Code Theme: Seti Terminal: https://www.iterm2.com/ Project Management: https://trello.com - Learn to code for free and get a developer job: https://www.freecodecamp.com Read hundreds of articles on programming: https://medium.freecodecamp.com And subscribe for new videos on technology every day: https://youtube.com/subscription_center?add_user=freecodecamp</media:description>
+            <media:community>
+                <media:starRating count="35" average="4.89" min="1" max="5" />
+                <media:statistics views="1011" />
+            </media:community>
+        </media:group>
+    </entry>
+    <entry>
+        <id>yt:video:8P4u7GaeYgc</id>
+        <yt:videoId>8P4u7GaeYgc</yt:videoId>
+        <yt:channelId>UC8butISFwT-Wl7EV0hUK0BQ</yt:channelId>
+        <title>React ScrollSpy Component Part 2 (P5D60) - Live Coding with Jesse</title>
+        <link rel="alternate" href="https://www.youtube.com/watch?v=8P4u7GaeYgc" />
+        <author>
+            <name>freeCodeCamp</name>
+            <uri>https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ</uri>
+        </author>
+        <published>2018-04-24T21:54:27+00:00</published>
+        <updated>2018-04-25T11:11:12+00:00</updated>
+        <media:group>
+            <media:title>React ScrollSpy Component Part 2 (P5D60) - Live Coding with Jesse</media:title>
+            <media:content url="https://www.youtube.com/v/8P4u7GaeYgc?version=3" type="application/x-shockwave-flash" width="640" height="390" />
+            <media:thumbnail url="https://i1.ytimg.com/vi/8P4u7GaeYgc/hqdefault.jpg" width="480" height="360" />
+            <media:description>Project 5 Day 60: Today we will finish creating a scrollspy component that will take a user to different sections of a page when clicked. See a professional front-end developer at work. Unscripted. Mistakes included. Next.js 5: https://zeit.co/blog/next5 Project Repo: https://github.com/fus-marcom/franciscan-react React: https://facebook.github.io/react/ Gitter: https://gitter.im/LiveCodingwithJesseFreeCodeCamp/ Twitter: https://twitter.com/JesseRWeigel Youtube: https://www.youtube.com/c/JesseWeigel29 Instagram: https://www.instagram.com/jesse.weigel/ Code Editor: Visual Studio Code VS Code Theme: Seti Terminal: https://www.iterm2.com/ Project Management: https://trello.com - Learn to code for free and get a developer job: https://www.freecodecamp.com Read hundreds of articles on programming: https://medium.freecodecamp.com And subscribe for new videos on technology every day: https://youtube.com/subscription_center?add_user=freecodecamp</media:description>
+            <media:community>
+                <media:starRating count="19" average="4.79" min="1" max="5" />
+                <media:statistics views="659" />
+            </media:community>
+        </media:group>
+    </entry>
+    <entry>
+        <id>yt:video:6gbEPyLOfmw</id>
+        <yt:videoId>6gbEPyLOfmw</yt:videoId>
+        <yt:channelId>UC8butISFwT-Wl7EV0hUK0BQ</yt:channelId>
+        <title>React ScrollSpy Component (P5D59) - Live Coding with Jesse</title>
+        <link rel="alternate" href="https://www.youtube.com/watch?v=6gbEPyLOfmw" />
+        <author>
+            <name>freeCodeCamp</name>
+            <uri>https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ</uri>
+        </author>
+        <published>2018-04-23T22:13:28+00:00</published>
+        <updated>2018-04-24T20:27:27+00:00</updated>
+        <media:group>
+            <media:title>React ScrollSpy Component (P5D59) - Live Coding with Jesse</media:title>
+            <media:content url="https://www.youtube.com/v/6gbEPyLOfmw?version=3" type="application/x-shockwave-flash" width="640" height="390" />
+            <media:thumbnail url="https://i3.ytimg.com/vi/6gbEPyLOfmw/hqdefault.jpg" width="480" height="360" />
+            <media:description>Project 5 Day 59: Today we will create a scrollspy component that will take a user to different sections of a page when clicked. See a professional front-end developer at work. Unscripted. Mistakes included. Next.js 5: https://zeit.co/blog/next5 Project Repo: https://github.com/fus-marcom/franciscan-react React: https://facebook.github.io/react/ Gitter: https://gitter.im/LiveCodingwithJesseFreeCodeCamp/ Twitter: https://twitter.com/JesseRWeigel Youtube: https://www.youtube.com/c/JesseWeigel29 Instagram: https://www.instagram.com/jesse.weigel/ Code Editor: Visual Studio Code VS Code Theme: Seti Terminal: https://www.iterm2.com/ Project Management: https://trello.com - Learn to code for free and get a developer job: https://www.freecodecamp.com Read hundreds of articles on programming: https://medium.freecodecamp.com And subscribe for new videos on technology every day: https://youtube.com/subscription_center?add_user=freecodecamp</media:description>
+            <media:community>
+                <media:starRating count="27" average="4.56" min="1" max="5" />
+                <media:statistics views="1039" />
+            </media:community>
+        </media:group>
+    </entry>
+    <entry>
+        <id>yt:video:C4t6qfHZ6Tw</id>
+        <yt:videoId>C4t6qfHZ6Tw</yt:videoId>
+        <yt:channelId>UC8butISFwT-Wl7EV0hUK0BQ</yt:channelId>
+        <title>Let's learn D3.js - D3 for data visualization (full course)</title>
+        <link rel="alternate" href="https://www.youtube.com/watch?v=C4t6qfHZ6Tw" />
+        <author>
+            <name>freeCodeCamp</name>
+            <uri>https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ</uri>
+        </author>
+        <published>2018-04-23T15:43:16+00:00</published>
+        <updated>2018-04-26T05:50:32+00:00</updated>
+        <media:group>
+            <media:title>Let's learn D3.js - D3 for data visualization (full course)</media:title>
+            <media:content url="https://www.youtube.com/v/C4t6qfHZ6Tw?version=3" type="application/x-shockwave-flash" width="640" height="390" />
+            <media:thumbnail url="https://i4.ytimg.com/vi/C4t6qfHZ6Tw/hqdefault.jpg" width="480" height="360" />
+            <media:description>This course teaches you how to visualise data in the browser using D3.js. Watch it here or check out the interactive version at Scrimba, where you’ll be able to play with the code as well: https://scrimba.com/g/gd3js D3.js is the most popular data visualization library for the web. It allows you to make sense of your data through a powerful API of methods. Throughout this course you'll learn the most important features of the library while building four different visualisations. Course content: Introduction (0:00) Selection and manipulation (1:59) Data loading and binding (5:25) Creating a simple bar chart (7:29) Creating labels (11:16) Scales (13:22) Axes (15:18) SVG elements (17:41) Creating a pie chart (20:32) Line charts (21:55) You can follow the course creator Sohaid Nehal on Twitter here: https://twitter.com/Sohaib_Nehal -- Learn to code for free and get a developer job: https://www.freecodecamp.com Read hundreds of articles on programming: https://medium.freecodecamp.com And subscribe for new videos on technology every day: https://youtube.com/subscription_center?add_user=freecodecamp</media:description>
+            <media:community>
+                <media:starRating count="105" average="4.92" min="1" max="5" />
+                <media:statistics views="2863" />
+            </media:community>
+        </media:group>
+    </entry>
+    <entry>
+        <id>yt:video:r5UtdJNxN94</id>
+        <yt:videoId>r5UtdJNxN94</yt:videoId>
+        <yt:channelId>UC8butISFwT-Wl7EV0hUK0BQ</yt:channelId>
+        <title>CSS in JS - typing issues</title>
+        <link rel="alternate" href="https://www.youtube.com/watch?v=r5UtdJNxN94" />
+        <author>
+            <name>freeCodeCamp</name>
+            <uri>https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ</uri>
+        </author>
+        <published>2018-04-19T16:30:04+00:00</published>
+        <updated>2018-04-24T18:31:03+00:00</updated>
+        <media:group>
+            <media:title>CSS in JS - typing issues</media:title>
+            <media:content url="https://www.youtube.com/v/r5UtdJNxN94?version=3" type="application/x-shockwave-flash" width="640" height="390" />
+            <media:thumbnail url="https://i3.ytimg.com/vi/r5UtdJNxN94/hqdefault.jpg" width="480" height="360" />
+            <media:description>Type systems are becoming increasingly popular in the javascript community with leading projects increasingly adopting flow and typescript. Another awesome development in the javascript space has been the rise of css-in-js frameworks. This talk is a deep dive into the challenges and opportunities that arise from typing css-in-js. Luke is one of the leading contributors to the one of the leading css-in-js frameworks `glamorous`, and also is also a downstream consumer of these typings having helped lead it's adoption on Western Australias leading news websites. The challenges and opportunities around typing javascript frameworks that this talk covers should be translatable any javascript and web frameworks. This talk was given by Luke John at Linux.conf.au 2018. This talk is under the creative commons license. freeCodeCamp is not associated with this talk. We're just excited to bring more exposure to to it! -- Learn to code for free and get a developer job: https://www.freecodecamp.com Read hundreds of articles on programming: https://medium.freecodecamp.com And subscribe for new videos on technology every day: https://youtube.com/subscription_center?add_user=freecodecamp</media:description>
+            <media:community>
+                <media:starRating count="32" average="4.88" min="1" max="5" />
+                <media:statistics views="1302" />
+            </media:community>
+        </media:group>
+    </entry>
+    <entry>
+        <id>yt:video:EjfiYGRT8g8</id>
+        <yt:videoId>EjfiYGRT8g8</yt:videoId>
+        <yt:channelId>UC8butISFwT-Wl7EV0hUK0BQ</yt:channelId>
+        <title>CSS Tutorial - Spinning Loading Animation</title>
+        <link rel="alternate" href="https://www.youtube.com/watch?v=EjfiYGRT8g8" />
+        <author>
+            <name>freeCodeCamp</name>
+            <uri>https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ</uri>
+        </author>
+        <published>2018-04-19T15:42:04+00:00</published>
+        <updated>2018-04-26T12:52:38+00:00</updated>
+        <media:group>
+            <media:title>CSS Tutorial - Spinning Loading Animation</media:title>
+            <media:content url="https://www.youtube.com/v/EjfiYGRT8g8?version=3" type="application/x-shockwave-flash" width="640" height="390" />
+            <media:thumbnail url="https://i2.ytimg.com/vi/EjfiYGRT8g8/hqdefault.jpg" width="480" height="360" />
+            <media:description>Make a spinning loading animation using CSS. More from the IT Guy here: https://www.youtube.com/channel/UCkjLDhBX3aQc290f-3iyDQA -- Learn to code for free and get a developer job: https://www.freecodecamp.com Read hundreds of articles on programming: https://medium.freecodecamp.com And subscribe for new videos on technology every day: https://youtube.com/subscription_center?add_user=freecodecamp</media:description>
+            <media:community>
+                <media:starRating count="195" average="4.88" min="1" max="5" />
+                <media:statistics views="2940" />
+            </media:community>
+        </media:group>
+    </entry>
+    <entry>
+        <id>yt:video:jUm_fQT6whQ</id>
+        <yt:videoId>jUm_fQT6whQ</yt:videoId>
+        <yt:channelId>UC8butISFwT-Wl7EV0hUK0BQ</yt:channelId>
+        <title>Basic HTML Updates - Live Coding with Jesse</title>
+        <link rel="alternate" href="https://www.youtube.com/watch?v=jUm_fQT6whQ" />
+        <author>
+            <name>freeCodeCamp</name>
+            <uri>https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ</uri>
+        </author>
+        <published>2018-04-18T17:59:43+00:00</published>
+        <updated>2018-04-25T20:29:56+00:00</updated>
+        <media:group>
+            <media:title>Basic HTML Updates - Live Coding with Jesse</media:title>
+            <media:content url="https://www.youtube.com/v/jUm_fQT6whQ?version=3" type="application/x-shockwave-flash" width="640" height="390" />
+            <media:thumbnail url="https://i3.ytimg.com/vi/jUm_fQT6whQ/hqdefault.jpg" width="480" height="360" />
+            <media:description>Today we will be updating a static HTML site that I developed last year. See a professional front-end developer at work. Unscripted. Mistakes included. Project Repo: https://github.com/fus-marcom/cmhc-site React: https://facebook.github.io/react/ Gitter: https://gitter.im/LiveCodingwithJesseFreeCodeCamp/ Twitter: https://twitter.com/JesseRWeigel Youtube: https://www.youtube.com/c/JesseWeigel29 Instagram: https://www.instagram.com/jesse.weigel/ Code Editor: Visual Studio Code VS Code Theme: Seti Terminal: https://www.iterm2.com/ Project Management: https://trello.com - Learn to code for free and get a developer job: https://www.freecodecamp.com Read hundreds of articles on programming: https://medium.freecodecamp.com And subscribe for new videos on technology every day: https://youtube.com/subscription_center?add_user=freecodecamp</media:description>
+            <media:community>
+                <media:starRating count="72" average="5.00" min="1" max="5" />
+                <media:statistics views="2152" />
+            </media:community>
+        </media:group>
+    </entry>
+    <entry>
+        <id>yt:video:qhuFviJn-es</id>
+        <yt:videoId>qhuFviJn-es</yt:videoId>
+        <yt:channelId>UC8butISFwT-Wl7EV0hUK0BQ</yt:channelId>
+        <title>ESLint Quickstart - find errors automatically</title>
+        <link rel="alternate" href="https://www.youtube.com/watch?v=qhuFviJn-es" />
+        <author>
+            <name>freeCodeCamp</name>
+            <uri>https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ</uri>
+        </author>
+        <published>2018-04-17T16:53:14+00:00</published>
+        <updated>2018-04-26T11:17:44+00:00</updated>
+        <media:group>
+            <media:title>ESLint Quickstart - find errors automatically</media:title>
+            <media:content url="https://www.youtube.com/v/qhuFviJn-es?version=3" type="application/x-shockwave-flash" width="640" height="390" />
+            <media:thumbnail url="https://i2.ytimg.com/vi/qhuFviJn-es/hqdefault.jpg" width="480" height="360" />
+            <media:description>ESLint is the standard solution for linting your JavaScript projects. It's never been easier to add ESLint to your project. In this short guide you'll learn how to get up and running with ESLint in under 5 minutes. Video by Harry Wolff. Harry has a YouTube channel about JavaScript: https://www.youtube.com/channel/UCgdeMp2ZBnovi12THmLc47g --- Learn to code for free and get a developer job: https://www.freecodecamp.com Read hundreds of articles on programming: https://medium.freecodecamp.com And subscribe for new videos on technology every day: https://youtube.com/subscription_center?add_user=freecodecamp</media:description>
+            <media:community>
+                <media:starRating count="204" average="4.96" min="1" max="5" />
+                <media:statistics views="4660" />
+            </media:community>
+        </media:group>
+    </entry>
+    <entry>
+        <id>yt:video:DwQJ_NPQWWo</id>
+        <yt:videoId>DwQJ_NPQWWo</yt:videoId>
+        <yt:channelId>UC8butISFwT-Wl7EV0hUK0BQ</yt:channelId>
+        <title>Async + Await in JavaScript, talk from Wes Bos</title>
+        <link rel="alternate" href="https://www.youtube.com/watch?v=DwQJ_NPQWWo" />
+        <author>
+            <name>freeCodeCamp</name>
+            <uri>https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ</uri>
+        </author>
+        <published>2018-04-16T16:58:08+00:00</published>
+        <updated>2018-04-26T14:43:45+00:00</updated>
+        <media:group>
+            <media:title>Async + Await in JavaScript, talk from Wes Bos</media:title>
+            <media:content url="https://www.youtube.com/v/DwQJ_NPQWWo?version=3" type="application/x-shockwave-flash" width="640" height="390" />
+            <media:thumbnail url="https://i1.ytimg.com/vi/DwQJ_NPQWWo/hqdefault.jpg" width="480" height="360" />
+            <media:description>Flow Control in JavaScript is hard! Native Promises in JavaScript have helped immensely, but the syntax is still a little callback-y. With Async + Await, we can write synchronous looking code without losing any of the benefits of JavaScript's asynchronous nature. Wes Bos explores how async + await works, best practices for flow control, and explores several solutions for handling errors. Filmed at https://2017.dotjs.io on December 1st in Paris. You can follow Wes Bos on Twitter: https://twitter.com/wesbos This talk is under the creative commons license. freeCodeCamp is not associated with this talk. We're just excited to bring more exposure to to it! -- Learn to code for free and get a developer job: https://www.freecodecamp.com Read hundreds of articles on programming: https://medium.freecodecamp.com And subscribe for new videos on technology every day: https://youtube.com/subscription_center?add_user=freecodecamp</media:description>
+            <media:community>
+                <media:starRating count="261" average="4.98" min="1" max="5" />
+                <media:statistics views="4962" />
+            </media:community>
+        </media:group>
+    </entry>
+    <entry>
+        <id>yt:video:w8ugYpTjOD0</id>
+        <yt:videoId>w8ugYpTjOD0</yt:videoId>
+        <yt:channelId>UC8butISFwT-Wl7EV0hUK0BQ</yt:channelId>
+        <title>React State Management (P5D58) - Live Coding with Jesse</title>
+        <link rel="alternate" href="https://www.youtube.com/watch?v=w8ugYpTjOD0" />
+        <author>
+            <name>freeCodeCamp</name>
+            <uri>https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ</uri>
+        </author>
+        <published>2018-04-13T19:58:22+00:00</published>
+        <updated>2018-04-21T13:22:10+00:00</updated>
+        <media:group>
+            <media:title>React State Management (P5D58) - Live Coding with Jesse</media:title>
+            <media:content url="https://www.youtube.com/v/w8ugYpTjOD0?version=3" type="application/x-shockwave-flash" width="640" height="390" />
+            <media:thumbnail url="https://i4.ytimg.com/vi/w8ugYpTjOD0/hqdefault.jpg" width="480" height="360" />
+            <media:description>Project 5 Day 58: Today we will pass state as props from a parent component to a child component and change the state based on clicks on the child component. See a professional front-end developer at work. Unscripted. Mistakes included. Next.js 5: https://zeit.co/blog/next5 Project Repo: https://github.com/fus-marcom/franciscan-react React: https://facebook.github.io/react/ Gitter: https://gitter.im/LiveCodingwithJesseFreeCodeCamp/ Twitter: https://twitter.com/JesseRWeigel Youtube: https://www.youtube.com/c/JesseWeigel29 Instagram: https://www.instagram.com/jesse.weigel/ Code Editor: Visual Studio Code VS Code Theme: Seti Terminal: https://www.iterm2.com/ Project Management: https://trello.com - Learn to code for free and get a developer job: https://www.freecodecamp.com Read hundreds of articles on programming: https://medium.freecodecamp.com And subscribe for new videos on technology every day: https://youtube.com/subscription_center?add_user=freecodecamp</media:description>
+            <media:community>
+                <media:starRating count="43" average="4.91" min="1" max="5" />
+                <media:statistics views="1336" />
+            </media:community>
+        </media:group>
+    </entry>
+    <entry>
+        <id>yt:video:Bm90KygSeRM</id>
+        <yt:videoId>Bm90KygSeRM</yt:videoId>
+        <yt:channelId>UC8butISFwT-Wl7EV0hUK0BQ</yt:channelId>
+        <title>React Infinite Scroll (P5D57) - Live Coding with Jesse</title>
+        <link rel="alternate" href="https://www.youtube.com/watch?v=Bm90KygSeRM" />
+        <author>
+            <name>freeCodeCamp</name>
+            <uri>https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ</uri>
+        </author>
+        <published>2018-04-12T18:09:38+00:00</published>
+        <updated>2018-04-26T02:34:09+00:00</updated>
+        <media:group>
+            <media:title>React Infinite Scroll (P5D57) - Live Coding with Jesse</media:title>
+            <media:content url="https://www.youtube.com/v/Bm90KygSeRM?version=3" type="application/x-shockwave-flash" width="640" height="390" />
+            <media:thumbnail url="https://i3.ytimg.com/vi/Bm90KygSeRM/hqdefault.jpg" width="480" height="360" />
+            <media:description>Project 5 Day 57: Today we will add infinite scroll functionality to the search page. See a professional front-end developer at work. Unscripted. Mistakes included. Next.js 5: https://zeit.co/blog/next5 Project Repo: https://github.com/fus-marcom/franciscan-react React: https://facebook.github.io/react/ Gitter: https://gitter.im/LiveCodingwithJesseFreeCodeCamp/ Twitter: https://twitter.com/JesseRWeigel Youtube: https://www.youtube.com/c/JesseWeigel29 Instagram: https://www.instagram.com/jesse.weigel/ Code Editor: Visual Studio Code VS Code Theme: Seti Terminal: https://www.iterm2.com/ Project Management: https://trello.com - Learn to code for free and get a developer job: https://www.freecodecamp.com Read hundreds of articles on programming: https://medium.freecodecamp.com And subscribe for new videos on technology every day: https://youtube.com/subscription_center?add_user=freecodecamp</media:description>
+            <media:community>
+                <media:starRating count="48" average="4.75" min="1" max="5" />
+                <media:statistics views="1478" />
+            </media:community>
+        </media:group>
+    </entry>
+    <entry>
+        <id>yt:video:ypvkGLJlbG4</id>
+        <yt:videoId>ypvkGLJlbG4</yt:videoId>
+        <yt:channelId>UC8butISFwT-Wl7EV0hUK0BQ</yt:channelId>
+        <title>Working with React Components Part 2 (P5D56) - Live Coding with Jesse</title>
+        <link rel="alternate" href="https://www.youtube.com/watch?v=ypvkGLJlbG4" />
+        <author>
+            <name>freeCodeCamp</name>
+            <uri>https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ</uri>
+        </author>
+        <published>2018-04-11T18:33:23+00:00</published>
+        <updated>2018-04-15T14:54:23+00:00</updated>
+        <media:group>
+            <media:title>Working with React Components Part 2 (P5D56) - Live Coding with Jesse</media:title>
+            <media:content url="https://www.youtube.com/v/ypvkGLJlbG4?version=3" type="application/x-shockwave-flash" width="640" height="390" />
+            <media:thumbnail url="https://i2.ytimg.com/vi/ypvkGLJlbG4/hqdefault.jpg" width="480" height="360" />
+            <media:description>Project 5 Day 56: Today we will add functionality to our DrawerItem component so that subitems can also have their own subitems. See a professional front-end developer at work. Unscripted. Mistakes included. Next.js 5: https://zeit.co/blog/next5 Project Repo: https://github.com/fus-marcom/franciscan-react React: https://facebook.github.io/react/ Gitter: https://gitter.im/LiveCodingwithJesseFreeCodeCamp/ Twitter: https://twitter.com/JesseRWeigel Youtube: https://www.youtube.com/c/JesseWeigel29 Instagram: https://www.instagram.com/jesse.weigel/ Code Editor: Visual Studio Code VS Code Theme: Seti Terminal: https://www.iterm2.com/ Project Management: https://trello.com - Learn to code for free and get a developer job: https://www.freecodecamp.com Read hundreds of articles on programming: https://medium.freecodecamp.com And subscribe for new videos on technology every day: https://youtube.com/subscription_center?add_user=freecodecamp</media:description>
+            <media:community>
+                <media:starRating count="18" average="4.78" min="1" max="5" />
+                <media:statistics views="812" />
+            </media:community>
+        </media:group>
+    </entry>
+    <entry>
+        <id>yt:video:pfDd8ku8idM</id>
+        <yt:videoId>pfDd8ku8idM</yt:videoId>
+        <yt:channelId>UC8butISFwT-Wl7EV0hUK0BQ</yt:channelId>
+        <title>Coding for a Swedish Startup - a day in the life of Amber Wilkie</title>
+        <link rel="alternate" href="https://www.youtube.com/watch?v=pfDd8ku8idM" />
+        <author>
+            <name>freeCodeCamp</name>
+            <uri>https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ</uri>
+        </author>
+        <published>2018-04-11T16:59:05+00:00</published>
+        <updated>2018-04-26T08:06:53+00:00</updated>
+        <media:group>
+            <media:title>Coding for a Swedish Startup - a day in the life of Amber Wilkie</media:title>
+            <media:content url="https://www.youtube.com/v/pfDd8ku8idM?version=3" type="application/x-shockwave-flash" width="640" height="390" />
+            <media:thumbnail url="https://i1.ytimg.com/vi/pfDd8ku8idM/hqdefault.jpg" width="480" height="360" />
+            <media:description>Find out what a normal day is like for programmer Amber Wilkie. http://www.amberwilkie.com/ -- Learn to code for free and get a developer job: https://www.freecodecamp.com Read hundreds of articles on programming: https://medium.freecodecamp.com And subscribe for new videos on technology every day: https://youtube.com/subscription_center?add_user=freecodecamp</media:description>
+            <media:community>
+                <media:starRating count="167" average="4.90" min="1" max="5" />
+                <media:statistics views="3476" />
+            </media:community>
+        </media:group>
+    </entry>
+    <entry>
+        <id>yt:video:AIhGhWtgLMg</id>
+        <yt:videoId>AIhGhWtgLMg</yt:videoId>
+        <yt:channelId>UC8butISFwT-Wl7EV0hUK0BQ</yt:channelId>
+        <title>Working with React Components (P5D55) - Live Coding with Jesse</title>
+        <link rel="alternate" href="https://www.youtube.com/watch?v=AIhGhWtgLMg" />
+        <author>
+            <name>freeCodeCamp</name>
+            <uri>https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ</uri>
+        </author>
+        <published>2018-04-10T18:28:01+00:00</published>
+        <updated>2018-04-16T04:57:24+00:00</updated>
+        <media:group>
+            <media:title>Working with React Components (P5D55) - Live Coding with Jesse</media:title>
+            <media:content url="https://www.youtube.com/v/AIhGhWtgLMg?version=3" type="application/x-shockwave-flash" width="640" height="390" />
+            <media:thumbnail url="https://i2.ytimg.com/vi/AIhGhWtgLMg/hqdefault.jpg" width="480" height="360" />
+            <media:description>Project 5 Day 55: Today we will add functionality to our DrawerItem component so that subitems can also have their own subitems. See a professional front-end developer at work. Unscripted. Mistakes included. Next.js 5: https://zeit.co/blog/next5 Project Repo: https://github.com/fus-marcom/franciscan-react React: https://facebook.github.io/react/ Gitter: https://gitter.im/LiveCodingwithJesseFreeCodeCamp/ Twitter: https://twitter.com/JesseRWeigel Youtube: https://www.youtube.com/c/JesseWeigel29 Instagram: https://www.instagram.com/jesse.weigel/ Code Editor: Visual Studio Code VS Code Theme: Seti Terminal: https://www.iterm2.com/ Project Management: https://trello.com - Learn to code for free and get a developer job: https://www.freecodecamp.com Read hundreds of articles on programming: https://medium.freecodecamp.com And subscribe for new videos on technology every day: https://youtube.com/subscription_center?add_user=freecodecamp</media:description>
+            <media:community>
+                <media:starRating count="36" average="4.67" min="1" max="5" />
+                <media:statistics views="1304" />
+            </media:community>
+        </media:group>
+    </entry>
+</feed>

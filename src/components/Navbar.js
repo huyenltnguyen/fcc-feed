@@ -6,7 +6,9 @@ const Navbar = () => {
       <button className='toggleMenu' aria-label='Menu'>
         <i className='fas fa-bars'></i>
       </button>
-      <h1><a href='#'>freeCodeCamp Feeds</a></h1>
+      <h1>
+        <a href='#'>freeCodeCamp Newsfeed</a>
+      </h1>
     </nav>
   );
 };

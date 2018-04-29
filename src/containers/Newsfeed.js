@@ -2,23 +2,25 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { fetchEntries } from '../actions';
 import mediumFeed from '../data/mock-medium-data.xml';  // temporary
+import youtubeFeed from '../data/mock-youtube-data.xml'; // temporary
 import Entry from '../components/Entry';
 
 class Newsfeed extends React.Component {
-  renderEntry = (platformName) => {
+  // render entries from each platform
+  renderEntries = (platform) => {
     // temporary
-    return this.props.entries[platformName].map((entry) => {
-      return <Entry key={ entry.id } entry={ entry } />
+    return this.props.entries[platform].map((entry) => {
+      return <Entry key={ entry.id } entry={ entry } platform={ platform } />
     });
   }
 
   renderNewsfeed = () => {
-    return Object.keys(this.props.entries).map((platformName) => {
+    return Object.keys(this.props.entries).map((platform) => {
       return (
-        <ul key={ platformName }>
+        <ul key={ platform }>
           {
             // temporary
-            this.renderEntry(platformName)
+            this.renderEntries(platform)
           }
         </ul>
       )
@@ -26,7 +28,7 @@ class Newsfeed extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchEntries(mediumFeed);
+    this.props.fetchEntries('youtube', youtubeFeed);
 
     // setTimeout(() => {
     //   this.props.fetchEntries('https://cors-everywhere.herokuapp.com/medium.freecodecamp.org/feed')

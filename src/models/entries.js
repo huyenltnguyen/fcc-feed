@@ -8,5 +8,15 @@ const entries = {
       link: String,
       thumbnail: String
     }
+  ],
+  youtube: [
+    {
+      id: String,
+      title: String,
+      link: String,
+      pubDate: String,
+      thumbnail: String,
+      description: String
+    }
   ]
 };
