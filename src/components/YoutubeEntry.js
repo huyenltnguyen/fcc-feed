@@ -10,6 +10,7 @@ const YoutubeEntry = (props) => {
 
         <div className='entry-body'>
           <h2>{ entry.title }</h2>
+          <p>{ entry.description }</p>
         </div>
       </a>
     </li>

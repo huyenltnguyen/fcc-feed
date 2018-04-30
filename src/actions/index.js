@@ -12,7 +12,8 @@ const extractMediumEntryData = (xmlDoc) => {
       pubDate: itemNode.getElementsByTagName('pubDate')[0].textContent,
       author: itemNode.getElementsByTagName('dc:creator')[0].textContent,
       link: itemNode.getElementsByTagName('link')[0].textContent,
-      thumbnail: itemNode.getElementsByTagName('content:encoded')[0].textContent.match(/src="(.*?)"/)[0].replace(/(src=)|(")/g, '')  // match url inside the src attribute (including the 'src=' string and the quotation marks), then extract the url only
+      thumbnail: itemNode.getElementsByTagName('content:encoded')[0].textContent.match(/src="(.*?)"/)[0].replace(/(src=)|(")/g, ''),  // match url inside the src attribute (including the 'src=' string and the quotation marks), then extract the url only
+      description: itemNode.getElementsByTagName('content:encoded')[0].textContent.match(/<p>.*(?=<\/p>)/)[0].replace(/<.*?>/g, '').split(' ').slice(0, 21).join(' ') + '...'  // match anything from <p> to </p> (</p> excluded), then remove all html tags and extract 20 words from the string
     };
   });
 
@@ -33,7 +34,7 @@ const extractYoutubeEntryData = (xmlDoc) => {
       link: itemNode.getElementsByTagName('link')[0].getAttribute('href').replace('watch?v=', 'embed/'),
       pubDate: itemNode.getElementsByTagName('published')[0].textContent,
       thumbnail: itemNode.getElementsByTagName('media:thumbnail')[0].getAttribute('url'),
-      description: itemNode.getElementsByTagName('media:description')[0].textContent
+      description: itemNode.getElementsByTagName('media:description')[0].textContent.split(' ').splice(0, 21).join(' ') + '...'
     }
   });
 
@@ -41,6 +42,17 @@ const extractYoutubeEntryData = (xmlDoc) => {
     youtube: entryData
   };
 };
+
+/* fetchEntries () {
+  return (dispatch) => {
+    Promise.all() {
+      fetchMediumFeed()
+      fetchYoutubeFeed()
+    }.then(() => dispatch())
+  }
+
+}
+*/
 
 export const fetchEntries = (platform, feedUrl) => {
    // const mediumFeed = 'https://cors-everywhere.herokuapp.com/medium.freecodecamp.org/feed';

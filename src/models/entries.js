@@ -6,7 +6,8 @@ const entries = {
       pubDate: String,
       author: String,
       link: String,
-      thumbnail: String
+      thumbnail: String,
+      description: String
     }
   ],
   youtube: [

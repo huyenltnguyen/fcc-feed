@@ -28,7 +28,7 @@ class Newsfeed extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchEntries('youtube', youtubeFeed);
+    this.props.fetchEntries('medium', mediumFeed);
 
     // setTimeout(() => {
     //   this.props.fetchEntries('https://cors-everywhere.herokuapp.com/medium.freecodecamp.org/feed')
