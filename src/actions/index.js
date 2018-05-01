@@ -43,6 +43,30 @@ const extractYoutubeEntryData = (xmlDoc) => {
   };
 };
 
+const extractLibsynEntryData = (xmlDoc) => {
+  // create an array of item nodes from the HTMLCollection (array-like object)
+  // so that we can use `map()` on it to extract its data
+  // Libsyn returns all of their items, but we only need the 10 latest ones
+  const itemNodes = Array.from(xmlDoc.getElementsByTagName('item')).slice(0, 10);
+
+  const entryData = itemNodes.map((itemNode) => {
+    return {
+      id: itemNode.getElementsByTagName('guid')[0].textContent,
+      title: itemNode.getElementsByTagName('title')[0].textContent,
+      link: itemNode.getElementsByTagName('link')[0].textContent,
+      pubDate: itemNode.getElementsByTagName('pubDate')[0].textContent,
+      thumbnail: itemNode.getElementsByTagName('itunes:image')[0].getAttribute('href'),
+      audioSource: itemNode.getElementsByTagName('enclosure')[0].getAttribute('url'),
+      audioType: itemNode.getElementsByTagName('enclosure')[0].getAttribute('type'),
+      description: itemNode.getElementsByTagName('itunes:summary')[0].textContent.split(' ').slice(0, 21).join(' ') + '...'
+    };
+  });
+
+  return {
+    libsyn: entryData
+  };
+}
+
 /* fetchEntries () {
   return (dispatch) => {
     Promise.all() {
@@ -70,7 +94,8 @@ export const fetchEntries = (platform, feedUrl) => {
           entries = { ...extractMediumEntryData(xmlDoc) };
         } else if (platform === 'youtube') {
           entries = { ...extractYoutubeEntryData(xmlDoc) };
-          console.log(entries);
+        } else if (platform === 'libsyn') {
+          entries = { ...extractLibsynEntryData(xmlDoc) };
         }
 
         dispatch({ type: actionTypes.FETCH_ENTRIES, payload: entries })

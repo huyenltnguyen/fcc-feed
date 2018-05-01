@@ -19,5 +19,17 @@ const entries = {
       thumbnail: String,
       description: String
     }
+  ],
+  libsyn: [
+    {
+      id: String,
+      title: String,
+      link: String,
+      pubDate: String,
+      thumbnail: String,
+      audioSource: String,
+      audioType: String,
+      description: String
+    }
   ]
 };

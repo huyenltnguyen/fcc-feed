@@ -1,4 +1,4 @@
-.Entry {
+.entry {
   img {
     max-width: 100%;
   }
@@ -6,6 +6,10 @@
   iframe {
     border: none;
     height: 300px;
+    width: 100%;
+  }
+
+  audio {
     width: 100%;
   }
 }

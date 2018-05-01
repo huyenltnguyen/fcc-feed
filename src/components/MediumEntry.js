@@ -4,7 +4,7 @@ const MediumEntry = (props) => {
   const { entry } = props;
 
   return (
-    <li className='Entry'>
+    <li className='entry MediumEntry'>
       <a href='#'>
         <div className='entry-thumbnail'>
           <img alt='' src={ entry.thumbnail } />

@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { fetchEntries } from '../actions';
 import mediumFeed from '../data/mock-medium-data.xml';  // temporary
 import youtubeFeed from '../data/mock-youtube-data.xml'; // temporary
+import libsynFeed from '../data/mock-libsyn-data.xml'; // temporary
 import Entry from '../components/Entry';
 
 class Newsfeed extends React.Component {
@@ -28,7 +29,7 @@ class Newsfeed extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchEntries('medium', mediumFeed);
+    this.props.fetchEntries('libsyn', libsynFeed);
 
     // setTimeout(() => {
     //   this.props.fetchEntries('https://cors-everywhere.herokuapp.com/medium.freecodecamp.org/feed')

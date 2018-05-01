@@ -4,9 +4,9 @@ const YoutubeEntry = (props) => {
   const { entry } = props;
 
   return (
-    <li className='Entry'>
+    <li className='entry YoutubeEntry'>
       <a href='#'>
-        <iframe src={ entry.link } allowfullscreen='true'></iframe>
+        <iframe title={ entry.title } src={ entry.link } allowfullscreen='true'></iframe>
 
         <div className='entry-body'>
           <h2>{ entry.title }</h2>
