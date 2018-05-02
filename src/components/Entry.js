@@ -2,6 +2,7 @@ import React from 'react';
 import MediumEntry from './MediumEntry';
 import YoutubeEntry from './YoutubeEntry';
 import LibsynEntry from './LibsynEntry';
+import TwitterEntry from './TwitterEntry';
 
 const Entry = (props) => {
   const { entry, platform } = props;
@@ -13,6 +14,8 @@ const Entry = (props) => {
     ? <YoutubeEntry entry={ entry } />
     : platform === 'libsyn'
     ? <LibsynEntry entry={ entry } />
+    : platform === 'twitter'
+    ? <TwitterEntry entry={ entry } />
     : null
   );
 };

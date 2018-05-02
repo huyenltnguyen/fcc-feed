@@ -65,7 +65,29 @@ const extractLibsynEntryData = (xmlDoc) => {
   return {
     libsyn: entryData
   };
-}
+};
+
+const extractTwitterEntryData = (xmlDoc) => {
+  // create an array of item nodes from the HTMLCollection (array-like object)
+  // so that we can use `map()` on it to extract its data
+  const itemNodes = Array.from(xmlDoc.getElementsByTagName('item'));
+  const avatar = xmlDoc.getElementsByTagName('image')[0].textContent;
+
+  const entryData = itemNodes.map((itemNode) => {
+    return {
+      avatar,
+      id: itemNode.getElementsByTagName('guid')[0].textContent,
+      link: itemNode.getElementsByTagName('link')[0].textContent,
+      pubDate: itemNode.getElementsByTagName('pubDate')[0].textContent,
+      tweet: itemNode.getElementsByTagName('title')[0].textContent,
+      creator: itemNode.getElementsByTagName('dc:creator')[0].textContent
+    };
+  });
+
+  return {
+    twitter: entryData
+  }
+};
 
 /* fetchEntries () {
   return (dispatch) => {
@@ -81,6 +103,8 @@ const extractLibsynEntryData = (xmlDoc) => {
 export const fetchEntries = (platform, feedUrl) => {
    // const mediumFeed = 'https://cors-everywhere.herokuapp.com/medium.freecodecamp.org/feed';
    // const youtubeFeed = 'https://cors-everywhere.herokuapp.com/youtube.com/feeds/videos.xml?channel_id=UC8butISFwT-Wl7EV0hUK0BQ';
+   // const libsynFeed = 'http://freecodecamp.libsyn.com/rss';
+   // const twitterFeed = 'https://twitrss.me/twitter_user_to_rss/?user=ossia';
   const request = fetch(feedUrl);
   let entries = {};
 
@@ -96,6 +120,8 @@ export const fetchEntries = (platform, feedUrl) => {
           entries = { ...extractYoutubeEntryData(xmlDoc) };
         } else if (platform === 'libsyn') {
           entries = { ...extractLibsynEntryData(xmlDoc) };
+        } else if (platform === 'twitter') {
+          entries = { ...extractTwitterEntryData(xmlDoc) };
         }
 
         dispatch({ type: actionTypes.FETCH_ENTRIES, payload: entries })

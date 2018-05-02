@@ -31,5 +31,14 @@ const entries = {
       audioType: String,
       description: String
     }
+  ],
+  twitter: [
+    {
+      id: String,
+      link: String,
+      pubDate: String,
+      tweet: String,
+      creator: String
+    }
   ]
 };
