@@ -71,16 +71,14 @@ const extractTwitterEntryData = (xmlDoc) => {
   // create an array of item nodes from the HTMLCollection (array-like object)
   // so that we can use `map()` on it to extract its data
   const itemNodes = Array.from(xmlDoc.getElementsByTagName('item'));
-  const avatar = xmlDoc.getElementsByTagName('image')[0].textContent;
+  const profileImage = xmlDoc.getElementsByTagName('image')[0].textContent;
 
   const entryData = itemNodes.map((itemNode) => {
     return {
-      avatar,
+      profileImage,
       id: itemNode.getElementsByTagName('guid')[0].textContent,
       link: itemNode.getElementsByTagName('link')[0].textContent,
       pubDate: itemNode.getElementsByTagName('pubDate')[0].textContent,
-      tweet: itemNode.getElementsByTagName('title')[0].textContent,
-      creator: itemNode.getElementsByTagName('dc:creator')[0].textContent
     };
   });
 

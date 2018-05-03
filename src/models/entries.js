@@ -36,9 +36,7 @@ const entries = {
     {
       id: String,
       link: String,
-      pubDate: String,
-      tweet: String,
-      creator: String
+      pubDate: String
     }
   ]
 };
