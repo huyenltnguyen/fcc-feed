@@ -5,16 +5,16 @@ import LibsynEntry from './LibsynEntry';
 import TwitterEntry from './TwitterEntry';
 
 const Entry = (props) => {
-  const { entry, platform } = props;
+  const { entry } = props;
 
   return (
-    platform === 'medium'
+    entry.platform === 'medium'
     ? <MediumEntry entry={ entry } />
-    : platform === 'youtube'
+    : entry.platform === 'youtube'
     ? <YoutubeEntry entry={ entry } />
-    : platform === 'libsyn'
+    : entry.platform === 'libsyn'
     ? <LibsynEntry entry={ entry } />
-    : platform === 'twitter'
+    : entry.platform === 'twitter'
     ? <TwitterEntry entry={ entry } />
     : null
   );

@@ -1,36 +1,41 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetchEntries } from '../actions';
-import mediumFeed from '../data/mock-medium-data.xml';  // temporary
-import youtubeFeed from '../data/mock-youtube-data.xml'; // temporary
-import libsynFeed from '../data/mock-libsyn-data.xml'; // temporary
-import twitterFeed from '../data/mock-twitter-data.xml'; // temporary
+import { fetchAllEntries } from '../actions';
 import Entry from '../components/Entry';
 
 class Newsfeed extends React.Component {
-  // render entries from each platform
-  renderEntries = (platform) => {
-    // temporary
-    return this.props.entries[platform].map((entry) => {
-      return <Entry key={ entry.id } entry={ entry } platform={ platform } />
-    });
-  }
-
   renderNewsfeed = () => {
-    return Object.keys(this.props.entries).map((platform) => {
-      return (
-        <ul key={ platform }>
-          {
-            // temporary
-            this.renderEntries(platform)
-          }
-        </ul>
-      )
+    // convert the entries object into an array of entries
+    // then sort it by date, from latest to oldest
+    const entryArray = Object.keys(this.props.entries).reduce((accumulator, currentPlatform) => {
+      return accumulator.concat(this.props.entries[currentPlatform]);  // flatten the array
+    }, []).sort((a, b) => {
+      return new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime();  // latest first
     });
+    console.log(entryArray);
+
+    return (
+      <ul>
+        {
+          entryArray.map((entry) => <Entry key={ entry.id } entry={ entry } />)
+        }
+      </ul>
+    );
+
+    // return entryArray.map((entry) => {
+    //   return (
+    //     <ul>
+    //       {
+    //         // temporary
+    //         this.renderEntry(entry)
+    //       }
+    //     </ul>
+    //   )
+    // });
   }
 
   componentDidMount() {
-    this.props.fetchEntries('medium', mediumFeed);
+    this.props.fetchAllEntries();
 
     // setTimeout(() => {
     //   this.props.fetchEntries('https://cors-everywhere.herokuapp.com/medium.freecodecamp.org/feed')
@@ -52,4 +57,4 @@ const mapStateToProps = state => {
   }
 };
 
-export default connect(mapStateToProps, { fetchEntries })(Newsfeed);
+export default connect(mapStateToProps, { fetchAllEntries })(Newsfeed);

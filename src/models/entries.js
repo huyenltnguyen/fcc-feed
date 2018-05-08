@@ -1,6 +1,7 @@
 const entries = {
   medium: [
     {
+      platform: String,
       id: String,
       title: String,
       pubDate: String,
@@ -12,6 +13,7 @@ const entries = {
   ],
   youtube: [
     {
+      platform: String,
       id: String,
       title: String,
       link: String,
@@ -22,6 +24,7 @@ const entries = {
   ],
   libsyn: [
     {
+      platform: String,
       id: String,
       title: String,
       link: String,
@@ -34,6 +37,7 @@ const entries = {
   ],
   twitter: [
     {
+      platform: String,
       id: String,
       link: String,
       pubDate: String

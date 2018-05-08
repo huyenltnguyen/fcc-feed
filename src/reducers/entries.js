@@ -3,7 +3,7 @@ import actionTypes from '../actions/actionTypes';
 
 const entries = (state = {}, action) => {
   switch (action.type) {
-    case actionTypes.FETCH_ENTRIES:
+    case actionTypes.FETCH_ALL_ENTRIES:
       const newState = Object.assign({}, state, action.payload);
       // if found new articles: return the current state,
       // but save the new articles somewhere else

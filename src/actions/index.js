@@ -1,4 +1,8 @@
 import actionTypes from './actionTypes';
+import mediumFeed from '../data/mock-medium-data.xml';  // temporary
+import youtubeFeed from '../data/mock-youtube-data.xml'; // temporary
+import libsynFeed from '../data/mock-libsyn-data.xml'; // temporary
+import twitterFeed from '../data/mock-twitter-data.xml'; // temporary
 
 const extractMediumEntryData = (xmlDoc) => {
   // create an array of item nodes from the HTMLCollection (array-like object)
@@ -7,6 +11,7 @@ const extractMediumEntryData = (xmlDoc) => {
 
   const entryData = itemNodes.map((itemNode) => {
     return {
+      platform: 'medium',
       id: itemNode.getElementsByTagName('guid')[0].textContent,
       title: itemNode.getElementsByTagName('title')[0].textContent,
       pubDate: itemNode.getElementsByTagName('pubDate')[0].textContent,
@@ -29,6 +34,7 @@ const extractYoutubeEntryData = (xmlDoc) => {
 
   const entryData = itemNodes.map((itemNode) => {
     return {
+      platform: 'youtube',
       id: itemNode.getElementsByTagName('yt:videoId')[0].textContent,
       title: itemNode.getElementsByTagName('title')[0].textContent,
       link: itemNode.getElementsByTagName('link')[0].getAttribute('href').replace('watch?v=', 'embed/'),
@@ -51,6 +57,7 @@ const extractLibsynEntryData = (xmlDoc) => {
 
   const entryData = itemNodes.map((itemNode) => {
     return {
+      platform: 'libsyn',
       id: itemNode.getElementsByTagName('guid')[0].textContent,
       title: itemNode.getElementsByTagName('title')[0].textContent,
       link: itemNode.getElementsByTagName('link')[0].textContent,
@@ -71,11 +78,10 @@ const extractTwitterEntryData = (xmlDoc) => {
   // create an array of item nodes from the HTMLCollection (array-like object)
   // so that we can use `map()` on it to extract its data
   const itemNodes = Array.from(xmlDoc.getElementsByTagName('item'));
-  const profileImage = xmlDoc.getElementsByTagName('image')[0].textContent;
 
   const entryData = itemNodes.map((itemNode) => {
     return {
-      profileImage,
+      platform: 'twitter',
       id: itemNode.getElementsByTagName('guid')[0].textContent,
       link: itemNode.getElementsByTagName('link')[0].textContent,
       pubDate: itemNode.getElementsByTagName('pubDate')[0].textContent,
@@ -87,42 +93,34 @@ const extractTwitterEntryData = (xmlDoc) => {
   }
 };
 
-/* fetchEntries () {
-  return (dispatch) => {
-    Promise.all() {
-      fetchMediumFeed()
-      fetchYoutubeFeed()
-    }.then(() => dispatch())
-  }
+const fetchEntriesFromAPlatform = (feedUrl, extractEntryDataFunction) => {
+  const request = fetch(feedUrl);
 
-}
-*/
+  return request.then((res) => res.text())
+    .then((str) => {
+      // parse XML from str into a DOM document
+      const xmlDoc = new DOMParser().parseFromString(str, 'application/xml');
+      return extractEntryDataFunction(xmlDoc);
+    });
+};
 
-export const fetchEntries = (platform, feedUrl) => {
+export const fetchAllEntries = () => {
    // const mediumFeed = 'https://cors-everywhere.herokuapp.com/medium.freecodecamp.org/feed';
    // const youtubeFeed = 'https://cors-everywhere.herokuapp.com/youtube.com/feeds/videos.xml?channel_id=UC8butISFwT-Wl7EV0hUK0BQ';
    // const libsynFeed = 'http://freecodecamp.libsyn.com/rss';
    // const twitterFeed = 'https://twitrss.me/twitter_user_to_rss/?user=ossia';
-  const request = fetch(feedUrl);
-  let entries = {};
 
   return (dispatch) => {
-    request.then((res) => res.text())
-      .then((str) => {
-        // parse XML from str into a DOM document
-        const xmlDoc = new DOMParser().parseFromString(str, 'application/xml');
+    Promise.all([
+      fetchEntriesFromAPlatform(mediumFeed, extractMediumEntryData),
+      fetchEntriesFromAPlatform(youtubeFeed, extractYoutubeEntryData),
+      fetchEntriesFromAPlatform(libsynFeed, extractLibsynEntryData),
+      fetchEntriesFromAPlatform(twitterFeed, extractTwitterEntryData)
+    ])
+    .then((data) => {
+      const entries = Object.assign({}, ...data);
 
-        if (platform === 'medium') {
-          entries = { ...extractMediumEntryData(xmlDoc) };
-        } else if (platform === 'youtube') {
-          entries = { ...extractYoutubeEntryData(xmlDoc) };
-        } else if (platform === 'libsyn') {
-          entries = { ...extractLibsynEntryData(xmlDoc) };
-        } else if (platform === 'twitter') {
-          entries = { ...extractTwitterEntryData(xmlDoc) };
-        }
-
-        dispatch({ type: actionTypes.FETCH_ENTRIES, payload: entries })
+      dispatch({ type: actionTypes.FETCH_ALL_ENTRIES, payload: entries });
     });
   };
 };
