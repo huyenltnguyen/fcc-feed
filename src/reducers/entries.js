@@ -15,6 +15,10 @@ const entries = (state = {}, action) => {
       // console.log('update state');
 
       return newState;
+
+    case actionTypes.FILTER_ENTRIES_BY_PLATFORM:
+      return action.payload ? { [action.payload]: state[action.payload] } : state;
+
     default:
       return state;
   }

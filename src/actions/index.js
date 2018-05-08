@@ -4,6 +4,10 @@ import youtubeFeed from '../data/mock-youtube-data.xml'; // temporary
 import libsynFeed from '../data/mock-libsyn-data.xml'; // temporary
 import twitterFeed from '../data/mock-twitter-data.xml'; // temporary
 
+//=======================================================================//
+//                      HELPER FUNCTIONS START
+//=======================================================================//
+
 const extractMediumEntryData = (xmlDoc) => {
   // create an array of item nodes from the HTMLCollection (array-like object)
   // so that we can use `map()` on it to extract its data
@@ -104,6 +108,14 @@ const fetchEntriesFromAPlatform = (feedUrl, extractEntryDataFunction) => {
     });
 };
 
+//=======================================================================//
+//                         HELPER FUNCTIONS END
+//=======================================================================//
+
+//=======================================================================//
+//                         ACTION CREATORS START
+//=======================================================================//
+
 export const fetchAllEntries = () => {
    // const mediumFeed = 'https://cors-everywhere.herokuapp.com/medium.freecodecamp.org/feed';
    // const youtubeFeed = 'https://cors-everywhere.herokuapp.com/youtube.com/feeds/videos.xml?channel_id=UC8butISFwT-Wl7EV0hUK0BQ';
@@ -124,3 +136,15 @@ export const fetchAllEntries = () => {
     });
   };
 };
+
+
+export const filterEntriesByPlatform = (selectedPlatform) => {
+  return {
+    type: actionTypes.FILTER_ENTRIES_BY_PLATFORM,
+    payload: selectedPlatform
+  };
+};
+
+//=======================================================================//
+//                        ACTION CREATORS END
+//=======================================================================//

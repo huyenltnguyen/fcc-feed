@@ -12,7 +12,6 @@ class Newsfeed extends React.Component {
     }, []).sort((a, b) => {
       return new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime();  // latest first
     });
-    console.log(entryArray);
 
     return (
       <ul>
@@ -21,24 +20,13 @@ class Newsfeed extends React.Component {
         }
       </ul>
     );
-
-    // return entryArray.map((entry) => {
-    //   return (
-    //     <ul>
-    //       {
-    //         // temporary
-    //         this.renderEntry(entry)
-    //       }
-    //     </ul>
-    //   )
-    // });
   }
 
   componentDidMount() {
     this.props.fetchAllEntries();
 
     // setTimeout(() => {
-    //   this.props.fetchEntries('https://cors-everywhere.herokuapp.com/medium.freecodecamp.org/feed')
+    //   this.props.fetchAllEntries();
     // }, 10000);
   }
 
@@ -51,10 +39,10 @@ class Newsfeed extends React.Component {
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
     entries: state.entries
-  }
+  };
 };
 
 export default connect(mapStateToProps, { fetchAllEntries })(Newsfeed);

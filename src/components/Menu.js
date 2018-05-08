@@ -1,17 +1,20 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { filterEntriesByPlatform } from '../actions';
 
-const Menu = () => {
+const Menu = (props) => {
   return (
     <div className='Menu'>
       <h3>Menu</h3>
       <ul>
-        <li>Medium</li>
-        <li>Youtube</li>
-        <li>Libsyn</li>
-        <li>Quincy's Twitter</li>
+        <li onClick={ () => props.filterEntriesByPlatform() }>All</li>
+        <li onClick={ () => props.filterEntriesByPlatform('medium') }>Medium</li>
+        <li onClick={ () => props.filterEntriesByPlatform('youtube') }>Youtube</li>
+        <li onClick={ () => props.filterEntriesByPlatform('libsyn') }>Libsyn</li>
+        <li onClick={ () => props.filterEntriesByPlatform('twitter') }>Quincy's Twitter</li>
       </ul>
     </div>
   );
 };
 
-export default Menu;
+export default connect(null, { filterEntriesByPlatform })(Menu);
